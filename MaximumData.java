@@ -1,4 +1,5 @@
 public class MaximumData <T extends Comparable<T>>{
+
         private T[] inputArray;
 
         MaximumData(T[] inputArray){
@@ -11,6 +12,10 @@ public class MaximumData <T extends Comparable<T>>{
                     inputArray[i+1] = inputArray[i];
                 }
             }
-            System.out.println(inputArray[inputArray.length-1]);
+            printMax();
+        }
+
+        private void printMax() {
+            System.out.println(inputArray[inputArray.length - 1]);
         }
 }
